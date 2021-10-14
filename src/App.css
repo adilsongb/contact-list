@@ -1,38 +1,153 @@
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding-top: 40px;
+}
+
+#root {
+  width: 80%;
+}
+
 .App {
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(160, 160, 160, 0.431);
+}
+
+header {
+  background-color: rgb(236, 236, 236);
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header h1 {
+  color: rgb(75, 75, 75);
+  margin: 0;
+}
+
+.contacts {
+  background-color: rgb(245, 245, 245);
+  border-radius: 0 0 5px 5px;
+  width: 100%;
+}
+
+.contacts h3 {
+  color: rgb(160, 160, 160);
+  margin: 0;
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contacts table {
+  border-collapse: collapse;
+  border-color: transparent;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+th {
+  color: rgb(68, 65, 65);
+  text-align: start;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+td {
+  padding: 10px;
+}
+
+th, td {
+  border-color: rgb(226, 226, 226);
+}
+
+.name {
+  width: 25%;
+}
+
+.email {
+  width: 30%;
+}
+
+.tel {
+  width: 25%;
+}
+
+.options {
+  width: 20%;
+}
+
+/* Botões */
+.btn {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: whitesmoke;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.btn-add {
+  background-color: rgb(67, 209, 131);
+  padding: 0 10px;
+}
+
+.btn-edit {
+  background-color: rgb(133, 175, 255);
+  padding: 10px;
+}
+
+.btn-remove {
+  background-color: rgb(243, 123, 102);
+  margin-left: 5px;
+  padding: 10px;
+}
+
+.btn-save {
+  background-color: rgb(87, 216, 156);
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Forms */
+.container-form {
+  background-color: rgba(65, 58, 58, 0.568);
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.container-form form {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  height: 250px;
+  margin-top: 20px;
+  padding: 20px;
+  width: 25%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container-form form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.container-form form input {
+  border: 1px solid rgb(211, 208, 208);
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  padding: 10px;
+  width: 100%;
 }
