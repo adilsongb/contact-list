@@ -11,10 +11,9 @@ Em `App.test.js` do projeto que você acabou de clonar, implemente os seguintes 
 
 1. Verifique se um título "Lista de contatos", um subtítulo "Lista de contatos vazia!", e se um botão "Novo contato" são renderizados.
 2. Teste se ao clicar no botão "Novo contato" um formulário aparece.
-    1. Verifique se o formulário possui os `inputs` certos e se possui um botão "Salvar".
+    1. Verifique se o formulário possui 3 `inputs` e se possui um botão "Salvar".
 3. Teste se ao inserir informações no formulário anterior e se ao clicar no botão "Salvar", uma tabela é criada com as informações passadas.
-    1. Verifique se a tabela possui dois botões "Editar" e "Remover".
-    2. Teste se ao clicar no botão "Editar", um formulário aparece com os inputs com os valores certos e se ao editar as informações nos inputs e clicar no botão "Salvar", as informações do contato, na tabela, mudam.
-    3. Teste se ao clicar no botão "Remover" as informações do contato são removidas da tabela.
 4. Importe o arquivo `data.js` em `App.test.js` e use o array de objetos dele para renderizar a tabela de contatos. Dica: Você pode renderizar apenas o componente `TableContacts` passando para ele o array de objetos como props.
     1. Verifique se todos os contatos do array são renderizados na tabela.
+    2. Verifique se a tabela possui 3 botões "Editar" e 3 botões "Remover".
+    3. Teste se ao clicar no botão "Remover" as informações do contato são removidas da tabela.
