@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+Esse é um projeto de uma lista de contatos para os exercícios de `RTL`.
+### Antes de iniciar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Crie um [fork](https://github.com/UNIVALI-LITE/Portugol-Studio/wiki/Fazendo-um-Fork-do-reposit%C3%B3rio) do [repositório do exercício](https://github.com/adilsongb/exercise-contact-list) e clone o repositório, criado pelo fork, na sua máquina.
 
-## Available Scripts
+Rode o comando `npm install` na pasta do projeto.
 
-In the project directory, you can run:
+### Exercícios - Lista de contatos
 
-### `npm start`
+Em `App.test.js` do projeto que você acabou de clonar, implemente os seguintes testes:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Verifique se um título "Lista de contatos", um subtítulo "Lista de contatos vazia!", e se um botão "Novo contato" são renderizados.
+2. Teste se ao clicar no botão "Novo contato" um formulário aparece.
+    1. Verifique se o formulário possui os `inputs` certos e se possui um botão "Salvar".
+3. Teste se ao inserir informações no formulário anterior e se ao clicar no botão "Salvar", uma tabela é criada com as informações passadas.
+    1. Verifique se a tabela possui dois botões "Editar" e "Remover".
+    2. Teste se ao clicar no botão "Editar", um formulário aparece com os inputs com os valores certos e se ao editar as informações nos inputs e clicar no botão "Salvar", as informações do contato, na tabela, mudam.
+    3. Teste se ao clicar no botão "Remover" as informações do contato são removidas da tabela.
+4. Importe o arquivo `Data.js` em `App.test.js` e use o array de objetos dele para renderizar a tabela de contatos. Dica: Você pode renderizar apenas o componente `TableContacts` passando para ele o array de objetos como props.
+    1. Verifique se todos os contatos do array são renderizados na tabela.
