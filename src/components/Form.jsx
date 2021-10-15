@@ -57,7 +57,7 @@ class Form extends React.Component {
     const { name, email, tel } = this.state;
     return (
       <div className="container-form">
-        <form>
+        <form data-testid="formulario">
           <label htmlFor="name-input">Nome</label>
           <input
             type="text"
