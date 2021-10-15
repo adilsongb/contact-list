@@ -73,8 +73,8 @@ class TableContacts extends React.Component {
 
 TableContacts.propTypes = {
   contacts: PropTypes.arrayOf(PropTypes.object).isRequired,
-  editContact: PropTypes.func.isRequired,
-  removeContact: PropTypes.func.isRequired,
+  editContact: PropTypes.func,
+  removeContact: PropTypes.func,
 };
 
 export default TableContacts;
