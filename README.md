@@ -16,5 +16,5 @@ Em `App.test.js` do projeto que você acabou de clonar, implemente os seguintes 
     1. Verifique se a tabela possui dois botões "Editar" e "Remover".
     2. Teste se ao clicar no botão "Editar", um formulário aparece com os inputs com os valores certos e se ao editar as informações nos inputs e clicar no botão "Salvar", as informações do contato, na tabela, mudam.
     3. Teste se ao clicar no botão "Remover" as informações do contato são removidas da tabela.
-4. Importe o arquivo `Data.js` em `App.test.js` e use o array de objetos dele para renderizar a tabela de contatos. Dica: Você pode renderizar apenas o componente `TableContacts` passando para ele o array de objetos como props.
+4. Importe o arquivo `data.js` em `App.test.js` e use o array de objetos dele para renderizar a tabela de contatos. Dica: Você pode renderizar apenas o componente `TableContacts` passando para ele o array de objetos como props.
     1. Verifique se todos os contatos do array são renderizados na tabela.
